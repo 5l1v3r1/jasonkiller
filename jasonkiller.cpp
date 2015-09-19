@@ -83,7 +83,7 @@ int WINAPI WinMain(HINSTANCE inst,HINSTANCE prev,LPSTR cmd,int show)
 			// kill any process of blacklist
  			jasonkiller();
 		}
-// wait 3 sec to kill again
+// wait  secs to kill again
 		Sleep(10000); 
 	}
 
