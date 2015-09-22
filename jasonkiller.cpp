@@ -2,7 +2,7 @@
 Proof of concept to avKiller
 
 to compile:
-	g++ -I"C:\MinGW\include" -L"C:\MinGW\lib" -mwindows -s -o jasonkiller.exe jasonkiller.cpp -O3
+	g++ -I"C:\MinGW\include" -L"C:\MinGW\lib" -mwindows -s -o jasonkiller.exe jasonkiller.cpp -O3 -static-libgcc -static-libstdc++
 
 Only Study purpose...
 
