@@ -35,7 +35,7 @@ void kill_corpse(const char *filename)
 	{
 		if (strcmp(process_entry.szExeFile, filename) == 0)
 		{
-			HANDLE hProcess = OpenProcess(PROCESS_TERMINATE, 0,(DWORD) process_entry.th32ProcessID);
+			HANDLE hProcess = OpenProcess(PROCESS_ALL_ACCESS, 0,(DWORD) process_entry.th32ProcessID);
             		if (hProcess != NULL)
             		{
                 		TerminateProcess(hProcess, 9);
